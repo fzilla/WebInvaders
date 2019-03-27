@@ -1,0 +1,145 @@
+@font-face {
+  font-family: beholder;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/beholder.regular.ttf);
+}
+
+@font-face {
+  font-family: forvertz;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/forvertz.regular.ttf);
+}
+
+@font-face {
+  font-family: inria-sans-regular;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/inria-sans.regular.ttf);
+}
+
+@font-face {
+  font-family: soccer-league;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/soccer-league.regular.ttf);
+}
+
+@font-face {
+  font-family: herkules;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/herkules.ttf);
+}
+
+
+#web_invaders_game_canvas_div {
+  $main_font: 'forvertz';
+  $main_font_2: 'soccer-league';
+  $sub_font: 'inria-sans-regular';
+  $sub_font_2: 'herkules';
+  $sub_font_3: 'beholder';
+
+  #web_invaders_game_finish_dialog, #web_invaders_game_pause_dialog, #web_invaders_game_start_dialog {
+    position: fixed;
+    top: 50px;
+    left: 25%;
+    width: 50%;
+    z-index: 99999;
+    background: #a58600;
+    padding: 15px;
+    box-shadow: 3px 3px 10px #000;
+    font-family: $sub_font;
+    color: #000000;
+
+    .instruction {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .game_name {
+      text-align: center;
+      font-size: 60px;
+      font-family: $main_font;
+    }
+
+    .game_over {
+      text-align: center;
+      font-size: 50px;
+      color: #9c2f2f;
+      font-family: $main_font_2;
+    }
+
+    .score {
+      text-align: center;
+      color: #ffd59f;
+      font-size: 35px;
+      font-family: $sub_font_3;
+
+      span {
+        color: #ffc600;
+        font-weight: bold;
+      }
+    }
+
+    .button {
+      margin: 18px;
+      text-align: center;
+      font-family: $sub_font_2;
+
+      .start, .close {
+        text-decoration: none;
+        border: 2px solid #000;
+        padding: 5px;
+        color: #630062;
+        font-size: x-large;
+        font-weight: bold;
+
+        &:hover {
+          background: #000;
+          border-color: #ff0000;
+        }
+      }
+
+      .close {
+
+        &:hover {
+          border-color: #00ff78;
+        }
+      }
+    }
+  }
+
+  #web_invaders_game_score_dialog {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 150px;
+    z-index: 99999;
+    background: #a58600;
+    padding: 5px;
+    box-shadow: 3px 3px 10px #000;
+    font-family: $sub_font;
+    color: #000000;
+    opacity: 0.8;
+
+    .game_name {
+      text-align: center;
+      font-size: 15px;
+      font-family: $main_font;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+
+    .score, .killed, .left {
+      color: #9c2f2f;
+    }
+
+    .info {
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+

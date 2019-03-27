@@ -1,0 +1,77 @@
+{
+
+  "manifest_version": 2,
+  "name": "Web Invaders",
+  "short_name": "",
+  "version": "1.0",
+  "author": "fzilla",
+
+  "description": "Web Invaders is a game which can be played on websites.",
+
+  "developer": {
+    "name": "Samar Yalini",
+    "url": "https://github.com/yaliniyalu"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "web-invaders@fzillaweb.com",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "icons": {
+    "48": "/assets/icons/icon.png",
+    "96": "/assets/icons/icon@2x.png",
+    "144": "/assets/icons/icon@3x.png",
+    "192": "/assets/icons/icon@4x.png"
+  },
+
+  "browser_action": {
+    "browser_style": false,
+    "default_area": "navbar",
+    "default_icon" : {
+      "64": "/assets/icons/icon-store.png"
+    },
+    "default_title": "Web Invaders"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "web_accessible_resources": [
+    "/assets/images/rocket.png",
+    "/assets/images/rocket-inactive.png",
+    "/assets/images/virus.gif",
+    "/assets/images/virus-2.gif",
+    "/assets/images/bullet.png",
+    "/assets/images/bomb.png",
+    "/assets/images/explosion.gif",
+
+    "/assets/audio/explosion.mp3",
+    "/assets/audio/explosion-1.mp3",
+    "/assets/audio/shoot.mp3",
+    "/assets/audio/background.mp3",
+
+    "style.css",
+
+    "/assets/fonts/beholder.regular.ttf",
+    "/assets/fonts/forvertz.regular.ttf",
+    "/assets/fonts/inria-sans.regular.ttf",
+    "/assets/fonts/soccer-league.regular.ttf",
+    "/assets/fonts/herkules.ttf"
+
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ]
+}

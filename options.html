@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div id="web_invaders_game_options">
+    <h1 class="game_name">WEB INVADERS</h1>
+    <form id="options-form">
+        <div class="input-div">
+            <label>No of Enemies at Initial page. (min: 20; max: 50)</label><br>
+            <input type="text" id="max_virus" min="20" max="50" value="20" title="No of Enemies">
+            <span class="error" id="error-max-virus">Value Must be between 20 and 50.</span>
+        </div>
+        <div class="input-div">
+            <label>No of Enemies at Succeeding pages. (min: 0; max: 50)</label><br>
+            <input type="text" id="max_virus_next" min="0" max="50" value="5" title="No of Enemies">
+            <span class="error" id="error-max-virus-next">Value Must be between 0 and 50.</span>
+        </div>
+        <div class="input-div">
+            <label>Audio</label>
+            <input type="checkbox" id="audio" title="Audio" checked>
+        </div>
+        <div class="input-div">
+            <label>Background Music</label>
+            <input type="checkbox" id="background" title="Audio" checked>
+        </div>
+        <div class="input-div">
+            <button type="submit" class="btn-save">Save</button>
+        </div>
+    </form>
+    <p class="sub_head">Play this game in html websites.</p>
+<!--    <p class="sub_head">Try these sites to play.</p>
+    <ul class="site_list">
+        <li><a href="http://php.net">php.net</a></li>
+    </ul>-->
+</div>
+<script type="text/javascript" src="options.js"></script>
+</body>
+</html>

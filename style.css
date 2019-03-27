@@ -1,0 +1,112 @@
+@font-face {
+  font-family: beholder;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/beholder.regular.ttf);
+}
+@font-face {
+  font-family: forvertz;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/forvertz.regular.ttf);
+}
+@font-face {
+  font-family: inria-sans-regular;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/inria-sans.regular.ttf);
+}
+@font-face {
+  font-family: soccer-league;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/soccer-league.regular.ttf);
+}
+@font-face {
+  font-family: herkules;
+  src: url(moz-extension://__MSG_@@extension_id__/assets/fonts/herkules.ttf);
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog, #web_invaders_game_canvas_div #web_invaders_game_start_dialog {
+  position: fixed;
+  top: 50px;
+  left: 25%;
+  width: 50%;
+  z-index: 99999;
+  background: #a58600;
+  padding: 15px;
+  box-shadow: 3px 3px 10px #000;
+  font-family: "inria-sans-regular";
+  color: #000000;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .instruction, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .instruction, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .instruction {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .instruction li, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .instruction li, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .instruction li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .game_name, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .game_name, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .game_name {
+  text-align: center;
+  font-size: 60px;
+  font-family: "forvertz";
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .game_over, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .game_over, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .game_over {
+  text-align: center;
+  font-size: 50px;
+  color: #9c2f2f;
+  font-family: "soccer-league";
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .score, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .score, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .score {
+  text-align: center;
+  color: #ffd59f;
+  font-size: 35px;
+  font-family: "beholder";
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .score span, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .score span, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .score span {
+  color: #ffc600;
+  font-weight: bold;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button {
+  margin: 18px;
+  text-align: center;
+  font-family: "herkules";
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button .start, #web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button .close, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button .start, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button .close, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button .start, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button .close {
+  text-decoration: none;
+  border: 2px solid #000;
+  padding: 5px;
+  color: #630062;
+  font-size: x-large;
+  font-weight: bold;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button .start:hover, #web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button .close:hover, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button .start:hover, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button .close:hover, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button .start:hover, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button .close:hover {
+  background: #000;
+  border-color: #ff0000;
+}
+#web_invaders_game_canvas_div #web_invaders_game_finish_dialog .button .close:hover, #web_invaders_game_canvas_div #web_invaders_game_pause_dialog .button .close:hover, #web_invaders_game_canvas_div #web_invaders_game_start_dialog .button .close:hover {
+  border-color: #00ff78;
+}
+#web_invaders_game_canvas_div #web_invaders_game_score_dialog {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 150px;
+  z-index: 99999;
+  background: #a58600;
+  padding: 5px;
+  box-shadow: 3px 3px 10px #000;
+  font-family: "inria-sans-regular";
+  color: #000000;
+  opacity: 0.8;
+}
+#web_invaders_game_canvas_div #web_invaders_game_score_dialog .game_name {
+  text-align: center;
+  font-size: 15px;
+  font-family: "forvertz";
+  line-height: 1;
+  margin-bottom: 0;
+}
+#web_invaders_game_canvas_div #web_invaders_game_score_dialog .score, #web_invaders_game_canvas_div #web_invaders_game_score_dialog .killed, #web_invaders_game_canvas_div #web_invaders_game_score_dialog .left {
+  color: #9c2f2f;
+}
+#web_invaders_game_canvas_div #web_invaders_game_score_dialog .info {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: inria-sans-regular;
+  src: url(assets/fonts/inria-sans.regular.ttf);
+}
+@font-face {
+  font-family: forvertz;
+  src: url(assets/fonts/forvertz.regular.ttf);
+}
+@font-face {
+  font-family: soccer-league;
+  src: url(assets/fonts/soccer-league.regular.ttf);
+}
+body {
+  background: #a58600;
+}
+
+#web_invaders_game_options {
+  font-family: "inria-sans-regular";
+  padding: 10px;
+}
+#web_invaders_game_options .input-div {
+  margin: 10px;
+}
+#web_invaders_game_options .input-div input {
+  height: 20px;
+  padding: 5px;
+}
+#web_invaders_game_options .info {
+  font-family: soccer-league, serif;
+  font-size: 26px;
+  color: #FF780A;
+  text-align: center;
+}
+#web_invaders_game_options .sub_head {
+  color: #000;
+}
+#web_invaders_game_options .game_name {
+  font-family: forvertz, serif;
+  color: #000;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#web_invaders_game_options .error {
+  color: #690000;
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#web_invaders_game_options .btn-save {
+  height: 30px;
+  width: 100px;
+  background: #7ed124;
+  border: 2px solid #000;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#web_invaders_game_options .btn-save:hover {
+  background: #d18024;
+  border: 2px solid #000;
+  color: #fff;
+}
+#web_invaders_game_options .site_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#web_invaders_game_options .site_list li {
+  list-style: none;
+}
+#web_invaders_game_options .site_list a {
+  text-decoration: none;
+  color: #007ffb;
+}
+#web_invaders_game_options .site_list a:hover {
+  color: #0A1B7B;
+}
